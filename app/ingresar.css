@@ -1,0 +1,38 @@
+.login-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B192C;
+
+  &::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) blur(2px);
+    mix-blend-mode: soft-light;
+  }
+}
+
+.login-box {
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  .logo {
+    display: block;
+    margin: 0 auto 1rem;
+    mix-blend-mode: multiply;
+    width: 150px;
+  }
+}

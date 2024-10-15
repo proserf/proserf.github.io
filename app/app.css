@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css');
+
+@import url('../assets/css/bootstrap.min.css');
+@import url('../assets/css/plugins.min.css');
+@import url('../assets/css/kaiadmin.css');
+
+@import url('ingresar.css');
+
+:root {
+  --bs-font-sans-serif: "Inter", sans-serif;
+  --bs-font-monospace: "Inconsolata", monospace;
+  --bs-body-color: #444;
+  --bs-primary-rgb: 1,66,114;
+  --bs-success-rgb: 25,103,27;
+  --bs-danger-rgb: 145,53,58;
+}
+
+.page:not(.active),
+.page-container:not(.active) {
+  display: none;
+}
+
+.logo-header .logo {
+  margin: auto;
+  background-color: inherit;
+
+  img {
+    height: 100%;
+    filter: grayscale(1) invert(1);
+    mix-blend-mode: screen;
+  }
+}
+
+.sidebar[data-background-color],
+.logo-header[data-background-color] {
+  background-color: #0B192C !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: #014272;
+  --bs-btn-border-color: #014272;
+  --bs-btn-hover-bg: #0263ab;
+  --bs-btn-hover-border-color: #0263ab;
+  --bs-btn-active-bg: #0263ab;
+  --bs-btn-active-border-color: #0263ab;
+  --bs-btn-disabled-bg: #7c7c7c;
+  --bs-btn-disabled-border-color: #7c7c7c;
+}
+
+.transparent-card-background {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.rotate-180deg {
+  transform: rotate(180deg);
+}
+
+.wrapper {
+  &::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    mask-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: url('../img/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) brightness(4) blur(2px) opacity(0.3);
+  }
+}
+.sidebar {
+  mix-blend-mode: multiply;
+}
