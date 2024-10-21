@@ -16,6 +16,7 @@ container.append(await fetchHTML(import.meta.resolve('./transferencias.html')));
 container.append(await fetchHTML(import.meta.resolve('./cuentas.html')));
 document.body.append(app);
 document.body.append(await fetchHTML(import.meta.resolve('./ingresar.html')));
+document.body.append(await fetchHTML(import.meta.resolve('./abrir-cuenta.html')));
 
 
 // Import inner page scripts
@@ -24,6 +25,7 @@ await import('./dashboard.js');
 await import('./movimientos.js');
 await import('./transferencias.js');
 await import('./ingresar.js');
+await import('./abrir-cuenta.js');
 
 
 // These scripts cannot be handled through import

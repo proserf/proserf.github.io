@@ -1,0 +1,57 @@
+.new-account-box {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  .logo {
+    display: block;
+    margin: 0 auto 1rem;
+    mix-blend-mode: multiply;
+    width: 150px;
+  }
+
+  .form-step:not(.active) {
+    display: none;
+  }
+
+  .form-col {
+    width: 360px;
+  }
+}
+
+.step-by-step-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .step {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: calc(2.5rem - 4px);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid;
+    border-radius: 100%;
+    color: rgb(var(--bs-body-color-rgb));
+
+    &.active {
+      background-color: var(--bs-secondary-bg-subtle);
+    }
+  }
+
+  .crumb {
+    display: inline-block;
+    width: 1.5rem;
+    border-top: 2px solid;
+    color: rgb(var(--bs-body-color-rgb));
+
+    .active ~ & {
+      border-top-style: dotted;
+    }
+  }
+}

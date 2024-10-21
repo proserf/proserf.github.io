@@ -8,6 +8,7 @@
 @import url('../assets/css/kaiadmin.css');
 
 @import url('ingresar.css');
+@import url('abrir-cuenta.css');
 
 :root {
   --bs-font-sans-serif: "Inter", sans-serif;
@@ -16,6 +17,13 @@
   --bs-primary-rgb: 1,66,114;
   --bs-success-rgb: 25,103,27;
   --bs-danger-rgb: 145,53,58;
+}
+
+legend {
+  float: none;
+  width: auto;
+  padding: 0 .5rem;
+  margin: 0 0 0 -0.5rem;
 }
 
 .page:not(.active),
